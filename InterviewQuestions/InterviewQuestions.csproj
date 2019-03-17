@@ -44,6 +44,8 @@
     <ItemGroup>
         <Compile Include="Challenges\Challenge1\Challenge1Tests.cs" />
         <Compile Include="Challenges\Challenge1\Challenge1.cs" />
+        <Compile Include="Challenges\Challenge2\Challenge2.cs" />
+        <Compile Include="Challenges\Challenge2\Challenge2Tests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
