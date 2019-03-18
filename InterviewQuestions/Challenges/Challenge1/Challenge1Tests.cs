@@ -6,55 +6,36 @@ namespace InterviewQuestions.Challenges.Challenge1
     public class Challenge1Tests
     {
         [Test]
-        public void AddNodeToLinkedListEnd()
+        public void InsertData()
         {
             var linkedList = new LinkedList<int>();
-            var node = new LinkedListNode<int>(5);
-
-            linkedList.AddNodeToEnd(node);
-            Assert.AreEqual(node.Data, linkedList.Tail.Data);
-        }
-        
-        [Test]
-        public void AddNodeToLinkedListStart()
-        {
-            var linkedList = new LinkedList<int>();
-            var node = new LinkedListNode<int>(5);
-
-            linkedList.AddNodeToBeginning(node);
-            Assert.AreEqual(node.Data, linkedList.Head.Data);
-        }
-
-        [Test]
-        public void AddManyNodesToLinkedList()
-        {
-            var linkedList = new LinkedList<int>();
-            var node1 = new LinkedListNode<int>(5);
-            var node2 = new LinkedListNode<int>(6);
-            var node3 = new LinkedListNode<int>(7);
-
-            linkedList.AddNodeToEnd(node1);
-            linkedList.AddNodeToEnd(node2);
-            linkedList.AddNodeToEnd(node3);
+            linkedList.Insert(5);
             
-            Assert.AreEqual(node1.Data, linkedList.Head.Data);
-            Assert.AreEqual(node3.Data, linkedList.Tail.Data);
+            Assert.AreEqual(5, linkedList.Tail.Data);
+        }
+
+        [Test]
+        public void InsertMultipleData()
+        {
+            var linkedList = new LinkedList<int>();
+            linkedList.Insert(5);
+            linkedList.Insert(6);
+            linkedList.Insert(7);
+
+            Assert.AreEqual(5, linkedList.Head.Data);
+            Assert.AreEqual(7, linkedList.Tail.Data);
         }
 
         [Test]
         public void RetrieveNodeFromLinkedList()
         {
             var linkedList = new LinkedList<int>();
-            var node1 = new LinkedListNode<int>(5);
-            var node2 = new LinkedListNode<int>(6);
-            var node3 = new LinkedListNode<int>(7);
-
-            linkedList.AddNodeToEnd(node1);
-            linkedList.AddNodeToEnd(node2);
-            linkedList.AddNodeToEnd(node3);
+            linkedList.Insert(5);
+            linkedList.Insert(6);
+            linkedList.Insert(7);
 
             var fetchedNode = linkedList.GetNodeWithData(6);
-            Assert.AreEqual(node2, fetchedNode);
+            Assert.AreEqual(6, fetchedNode.Data);
         }
 
         [Test]
@@ -88,17 +69,11 @@ namespace InterviewQuestions.Challenges.Challenge1
         public void ConvertLinkedListToArray()
         {
             var linkedList = new LinkedList<int>();
-            var node1 = new LinkedListNode<int>(5);
-            var node2 = new LinkedListNode<int>(6);
-            var node3 = new LinkedListNode<int>(7);
-            var node4 = new LinkedListNode<int>(8);
-            var node5 = new LinkedListNode<int>(9);
-            
-            linkedList.AddNodeToEnd(node1);
-            linkedList.AddNodeToEnd(node2);
-            linkedList.AddNodeToEnd(node3);
-            linkedList.AddNodeToEnd(node4);
-            linkedList.AddNodeToEnd(node5);
+            linkedList.Insert(5);
+            linkedList.Insert(6);
+            linkedList.Insert(7);
+            linkedList.Insert(8);
+            linkedList.Insert(9);
 
             var getArray = linkedList.GetAsArray();
             Assert.AreEqual(5, getArray[0]);
@@ -112,17 +87,11 @@ namespace InterviewQuestions.Challenges.Challenge1
         public void ReverseLinkedList()
         {
             var linkedList = new LinkedList<int>();
-            var node1 = new LinkedListNode<int>(5);
-            var node2 = new LinkedListNode<int>(6);
-            var node3 = new LinkedListNode<int>(7);
-            var node4 = new LinkedListNode<int>(8);
-            var node5 = new LinkedListNode<int>(9);
-            
-            linkedList.AddNodeToEnd(node1);
-            linkedList.AddNodeToEnd(node2);
-            linkedList.AddNodeToEnd(node3);
-            linkedList.AddNodeToEnd(node4);
-            linkedList.AddNodeToEnd(node5);
+            linkedList.Insert(5);
+            linkedList.Insert(6);
+            linkedList.Insert(7);
+            linkedList.Insert(8);
+            linkedList.Insert(9);
 
             linkedList.Reverse();
 
@@ -159,6 +128,26 @@ namespace InterviewQuestions.Challenges.Challenge1
             linkedList.RemoveLoop();
             loopExists = linkedList.HasLoop();
             Assert.AreEqual(false, loopExists);
+        }
+
+        [Test]
+        public void SortLinkedList()
+        {
+            var linkedList = new LinkedList<int>();
+            linkedList.Insert(6);
+            linkedList.Insert(8);
+            linkedList.Insert(2);
+            linkedList.Insert(9);
+            linkedList.Insert(3);
+            linkedList.Insert(5);
+            linkedList.Insert(7);
+            linkedList.Insert(1);
+            linkedList.Insert(4);
+
+            linkedList.Sort();
+            
+            Assert.AreEqual(1, linkedList.Head.Data);
+            Assert.AreEqual(9, linkedList.Tail.Data);
         }
     }
 }

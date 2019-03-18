@@ -12,12 +12,7 @@ namespace InterviewQuestions.Challenges.Challenge1
             throw new NotImplementedException();
         }
 
-        public void AddNodeToEnd(LinkedListNode<T> node)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void AddNodeToBeginning(LinkedListNode<T> node)
+        public void Insert(T data)
         {
             throw new NotImplementedException();
         }
@@ -43,6 +38,11 @@ namespace InterviewQuestions.Challenges.Challenge1
         }
 
         public void RemoveLoop()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Sort()
         {
             throw new NotImplementedException();
         }
