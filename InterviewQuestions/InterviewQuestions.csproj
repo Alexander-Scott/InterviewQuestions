@@ -50,6 +50,14 @@
         <Compile Include="Challenges\Challenge3\Challenge3Tests.cs" />
         <Compile Include="Challenges\Challenge4\Challenge4.cs" />
         <Compile Include="Challenges\Challenge4\Challenge4Tests.cs" />
+        <Compile Include="Challenges\Challenge5\Challenge5.cs" />
+        <Compile Include="Challenges\Challenge5\Challenge5Tests.cs" />
+        <Compile Include="Challenges\Challenge6\Challenge6.cs" />
+        <Compile Include="Challenges\Challenge6\Challenge6Tests.cs" />
+        <Compile Include="Challenges\Challenge7\Challenge7.cs" />
+        <Compile Include="Challenges\Challenge7\Challenge7Tests.cs" />
+        <Compile Include="Challenges\Challenge8\Challenge8.cs" />
+        <Compile Include="Challenges\Challenge8\Challenge8Tests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
