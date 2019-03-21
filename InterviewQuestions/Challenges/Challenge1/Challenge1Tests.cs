@@ -12,6 +12,7 @@ namespace InterviewQuestions.Challenges.Challenge1
             linkedList.Insert(5);
             
             Assert.AreEqual(5, linkedList.Tail.Data);
+            Assert.AreEqual(5, linkedList.Head.Data);
         }
 
         [Test]
@@ -60,7 +61,7 @@ namespace InterviewQuestions.Challenges.Challenge1
             var loopExists = linkedList.HasLoop();
             Assert.AreEqual(true, loopExists);
 
-            linkedList.Tail.Next = null;
+            node5.Next = null;
             loopExists = linkedList.HasLoop();
             Assert.AreEqual(false, loopExists);
         }

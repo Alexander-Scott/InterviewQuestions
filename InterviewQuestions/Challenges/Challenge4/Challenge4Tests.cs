@@ -20,7 +20,7 @@ namespace InterviewQuestions.Challenges.Challenge4
         public void Test2()
         {
             Random rand = new Random();
-            int dividend = rand.Next(10000);
+            int dividend = rand.Next(100000);
             int divisor = rand.Next(dividend);
             
             int result = Challenge4.DivideNumber(dividend, divisor);

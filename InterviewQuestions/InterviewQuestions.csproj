@@ -58,6 +58,8 @@
         <Compile Include="Challenges\Challenge7\Challenge7Tests.cs" />
         <Compile Include="Challenges\Challenge8\Challenge8.cs" />
         <Compile Include="Challenges\Challenge8\Challenge8Tests.cs" />
+        <Compile Include="Challenges\Challenge9\Challenge9.cs" />
+        <Compile Include="Challenges\Challenge9\Challenge9Tests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
