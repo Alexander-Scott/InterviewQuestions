@@ -8,7 +8,7 @@ namespace InterviewQuestions.Challenges.Challenge9
         [Test]
         public void Test1()
         {
-            int[] number = new[] {1, 3, 5, 7};
+            int[] number = {1, 3, 5, 7};
 
             int[] newNumber = Challenge9.IncrementNumber(number);
             
@@ -22,7 +22,7 @@ namespace InterviewQuestions.Challenges.Challenge9
         [Test]
         public void Test2()
         {
-            int[] number = new[] {1, 3, 5, 9};
+            int[] number = {1, 3, 5, 9};
 
             int[] newNumber = Challenge9.IncrementNumber(number);
             
@@ -36,7 +36,7 @@ namespace InterviewQuestions.Challenges.Challenge9
         [Test]
         public void Test3()
         {
-            int[] number = new[] {9, 9, 9, 9};
+            int[] number = {9, 9, 9, 9};
 
             int[] newNumber = Challenge9.IncrementNumber(number);
             
@@ -46,6 +46,34 @@ namespace InterviewQuestions.Challenges.Challenge9
             Assert.AreEqual(0, newNumber[2]);
             Assert.AreEqual(0, newNumber[3]);
             Assert.AreEqual(0, newNumber[4]);
+        }
+        
+        [Test]
+        public void Test4()
+        {
+            int[] number = {0, 0, 0, 0};
+
+            int[] newNumber = Challenge9.IncrementNumber(number);
+            
+            // Expected 1358
+            Assert.AreEqual(0, newNumber[0]);
+            Assert.AreEqual(0, newNumber[1]);
+            Assert.AreEqual(0, newNumber[2]);
+            Assert.AreEqual(1, newNumber[3]);
+        }
+        
+        [Test]
+        public void Test5()
+        {
+            int[] number = {1, 0, 0, 0};
+
+            int[] newNumber = Challenge9.IncrementNumber(number);
+            
+            // Expected 1358
+            Assert.AreEqual(1, newNumber[0]);
+            Assert.AreEqual(0, newNumber[1]);
+            Assert.AreEqual(0, newNumber[2]);
+            Assert.AreEqual(1, newNumber[3]);
         }
     }
 }

@@ -15,7 +15,7 @@ Given an array of integers. Find the largest increasing subsequence of integers 
 Divide two integers without using multiplication, division or the mod operator.
 
 ### Question 5
-How many times will a robot need to retrieve bins if it is given an array of bin ID's and it can only hold N bins at a time? When the robot is already holding N bins, it will return the least recently retrieved bin and store the new bin.  
+How many times will a robot need to retrieve bins if it is given an array of bin ID's and it can only hold N bins at a time? 
 
 ### Question 6
 Given an array of unique integers, return the smallest sum of two indexes whos values add up to a target number. 
@@ -30,8 +30,14 @@ Consider an undirected graph consisting of n nodes where each node is labeled fr
 Given an array of integers that represent the digits of a number (e.g. [1,3,5,4]), add one to this number and return the array of digits of the new number.
 
 ### Question 10
-Given a 2D maze, find the way from top-left corner to bottom-right corner. 
+Implement the logic for a bowling game.
 
 ### Question 11
+Implement an array based stack or a linked-list based stack.
+
+### Question 12
 Implement the quick sort algorithm.
+
+### Question 13
+Given a 2D maze, find the way from top-left corner to bottom-right corner. 
 

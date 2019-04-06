@@ -1,74 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-    <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{0E109277-9EDC-4802-AF2B-436595F88D14}</ProjectGuid>
-        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-        <OutputType>Library</OutputType>
-        <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>InterviewQuestions</RootNamespace>
-        <AssemblyName>InterviewQuestions</AssemblyName>
-        <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
-        <FileAlignment>512</FileAlignment>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>full</DebugType>
-        <Optimize>false</Optimize>
-        <OutputPath>bin\Debug\</OutputPath>
-        <DefineConstants>DEBUG;TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugType>pdbonly</DebugType>
-        <Optimize>true</Optimize>
-        <OutputPath>bin\Release\</OutputPath>
-        <DefineConstants>TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
-    <ItemGroup>
-        <Reference Include="System" />
-        <Reference Include="System.Core" />
-        <Reference Include="System.Data" />
-        <Reference Include="System.Xml" />
-        <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
-            <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
-        </Reference>
-    </ItemGroup>
-    <ItemGroup>
-        <Compile Include="Challenges\Challenge1\Challenge1Tests.cs" />
-        <Compile Include="Challenges\Challenge1\Challenge1.cs" />
-        <Compile Include="Challenges\Challenge2\Challenge2.cs" />
-        <Compile Include="Challenges\Challenge2\Challenge2Tests.cs" />
-        <Compile Include="Challenges\Challenge3\Challenge3.cs" />
-        <Compile Include="Challenges\Challenge3\Challenge3Tests.cs" />
-        <Compile Include="Challenges\Challenge4\Challenge4.cs" />
-        <Compile Include="Challenges\Challenge4\Challenge4Tests.cs" />
-        <Compile Include="Challenges\Challenge5\Challenge5.cs" />
-        <Compile Include="Challenges\Challenge5\Challenge5Tests.cs" />
-        <Compile Include="Challenges\Challenge6\Challenge6.cs" />
-        <Compile Include="Challenges\Challenge6\Challenge6Tests.cs" />
-        <Compile Include="Challenges\Challenge7\Challenge7.cs" />
-        <Compile Include="Challenges\Challenge7\Challenge7Tests.cs" />
-        <Compile Include="Challenges\Challenge8\Challenge8.cs" />
-        <Compile Include="Challenges\Challenge8\Challenge8Tests.cs" />
-        <Compile Include="Challenges\Challenge9\Challenge9.cs" />
-        <Compile Include="Challenges\Challenge9\Challenge9Tests.cs" />
-        <Compile Include="Properties\AssemblyInfo.cs" />
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E109277-9EDC-4802-AF2B-436595F88D14}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterviewQuestions</RootNamespace>
+    <AssemblyName>InterviewQuestions</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Challenges\Challenge10\Challenge10.cs" />
+    <Compile Include="Challenges\Challenge10\Challenge10Tests.cs" />
+    <Compile Include="Challenges\Challenge11\Challenge11.cs" />
+    <Compile Include="Challenges\Challenge11\Challenge11Tests.cs" />
+    <Compile Include="Challenges\Challenge12\Challenge12.cs" />
+    <Compile Include="Challenges\Challenge12\Challenge12Tests.cs" />
+    <Compile Include="Challenges\Challenge1\Challenge1Tests.cs" />
+    <Compile Include="Challenges\Challenge1\Challenge1.cs" />
+    <Compile Include="Challenges\Challenge2\Challenge2.cs" />
+    <Compile Include="Challenges\Challenge2\Challenge2Tests.cs" />
+    <Compile Include="Challenges\Challenge3\Challenge3.cs" />
+    <Compile Include="Challenges\Challenge3\Challenge3Tests.cs" />
+    <Compile Include="Challenges\Challenge4\Challenge4.cs" />
+    <Compile Include="Challenges\Challenge4\Challenge4Tests.cs" />
+    <Compile Include="Challenges\Challenge5\Challenge5.cs" />
+    <Compile Include="Challenges\Challenge5\Challenge5Tests.cs" />
+    <Compile Include="Challenges\Challenge6\Challenge6.cs" />
+    <Compile Include="Challenges\Challenge6\Challenge6Tests.cs" />
+    <Compile Include="Challenges\Challenge7\Challenge7.cs" />
+    <Compile Include="Challenges\Challenge7\Challenge7Tests.cs" />
+    <Compile Include="Challenges\Challenge8\Challenge8.cs" />
+    <Compile Include="Challenges\Challenge8\Challenge8Tests.cs" />
+    <Compile Include="Challenges\Challenge9\Challenge9.cs" />
+    <Compile Include="Challenges\Challenge9\Challenge9Tests.cs" />
+    <Compile Include="PrimeNumberFactorial\PrimeNumberFactorial.cs" />
+    <Compile Include="PrimeNumberFactorial\PrimeNumberTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
     <Target Name="BeforeBuild">
     </Target>
     <Target Name="AfterBuild">
     </Target>
     -->
-
 </Project>
